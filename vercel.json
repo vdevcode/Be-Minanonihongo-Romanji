@@ -1,9 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "Dockerfile",
-      "use": "@vercel/docker"
+  "functions": {
+    "api/**/*.rs": {
+      "runtime": "vercel-rust@4.0.7"
     }
-  ]
+  }
 }
